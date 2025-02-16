@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(tjimg.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .center{
+            width: 60%;
+            height: 500px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        i {
+            color: rgb(16, 14, 14);
+            font-size: 25px;
+            margin: 0px 5px;
+        }
+        .inp-grp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white; 
+            border-radius: 25px;
+            width: 90%;
+           
+        }
+        .text-field{
+            font-size: 20px;
+            outline: none;
+            border: none;
+            padding:10px;
+            width: 700px;
+            border-radius: 25px;
+      
+        }
+        .fav-card{
+            width: 120px;
+            height: 120px;
+            border: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .fav-card:hover{
+           
+            background-color:rgba(250, 235, 215, 0.518);
+            border-radius: 10px;
+
+            .dots{
+                opacity: 1;
+            }
+        }
+    
+
+        .circle{
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            background-color: rgba(0,0,0,0.329);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+           
+        }
+        .pic{
+            width: 100%;
+            border-radius: 50%;
+            height: auto;
+            
+        }
+       
+        
+        
+        .fav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            color: antiquewhite;
+            }
+
+            .fav-card p{
+                color: rgb(241, 237, 232);
+            }
+        .dots{
+          font-size: 20px;
+          position: relative;
+          left: 50px;
+          color: rgb(245, 243, 243);
+          opacity: 0;
+          transition: 0.4s all ease;
+        }
+        .top-right{
+            width: 200px;
+            height: 50px;
+            background-color: rgba(231, 226, 226, 0.526);
+            position:fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: transparent;
+           
+        }
+        .grid{
+            width: 0px;
+            color: white;
+        }
+         .dotts{
+            display: flex;
+            color: rgb(226, 221, 221);
+         }
+         .mail{
+            width: 40px;
+            border-radius: 50%;
+            
+          
+            
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="center">
+            <img src="google.png" alt="" width="40%" style="margin-bottom: 30px;">
+            <div class="inp-grp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search">
+                <input type="text" class="text-field" placeholder="search google or type a URL" name="q">
+            </form>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera"></i>
+       
+            </div>
+
+            <div class="fav-list">
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="pic" alt="">
+                    </div>
+                    <p>Instagram</p>
+                
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="chatgpt.png" class="pic" alt="">
+                    </div>
+                    <p>chatgpt</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="hotstar.png" class="pic" alt="">
+                
+            </div>
+            <p>hotstar</p>
+        </div>
+        <div class="fav-card">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="netflix.png" class="pic" alt="">
+            </div>
+            <p>netflix</p>
+        </div>
+
+        <div class="fav-card">
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+            <div class="circle">
+                <img src="whatsapp.png" class="pic" alt="">
+
+            </div>
+            <p>whatsapp</p>
+        </div>
+<div class="top-right">
+    <p>Gmail</p>
+    <p>Images</p>
+<div class="dotts">
+    <i class="fa-solid fa-ellipsis-vertical grid"></i>
+    <i class="fa-solid fa-ellipsis-vertical grid"></i>
+    <i class="fa-solid fa-ellipsis-vertical grid"></i>
+    </div>
+    <img src="gif.png" alt="" class="mail">
+</div>
+    </div>
+</body>
+</html>
